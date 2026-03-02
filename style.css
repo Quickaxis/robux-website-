@@ -493,8 +493,77 @@ h3 {
     color: var(--text-muted);
 }
 
+/* Trust Section */
+.trust {
+    padding: 100px 0;
+    background: linear-gradient(180deg, var(--bg-default) 0%, rgba(0, 176, 111, 0.03) 100%);
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.review-card {
+    background: var(--bg-card);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.review-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--roblox-green);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.reviewer-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.reviewer-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid var(--roblox-green);
+    object-fit: cover;
+    background: #1e1e1e;
+}
+
+.reviewer-name {
+    font-weight: 700;
+    color: var(--text);
+    font-size: 1.1rem;
+}
+
+.reviewer-status {
+    font-size: 0.85rem;
+    color: var(--roblox-green);
+    font-weight: 600;
+}
+
+.review-rating {
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.review-text {
+    color: var(--text-muted);
+    line-height: 1.6;
+    font-style: italic;
+    font-size: 1rem;
+}
+
 /* Footer */
-footer {
+.footer {
     padding: 60px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     margin-top: 60px;
